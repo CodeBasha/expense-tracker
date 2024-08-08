@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: #222222;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: 800;
+}
+h2 {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: large;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: medium;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: small;
+  font-weight: 400;
+}
+
+input {
+  border: 1px solid #ccc;
+  height: 44px;
+  border-radius: 6px;
+}
+
+input[type="number"] {
+  width: 50%;
+}
+input[type="date"] {
+  width: 50%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  border: 1px solid #ccc;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
