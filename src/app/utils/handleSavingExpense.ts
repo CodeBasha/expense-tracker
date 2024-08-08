@@ -24,6 +24,7 @@ export default async function handleSavingExpense(
   })
     .then((response) => response.json())
     .then((data) => {
+      window.location.reload();
       console.log("Success:", data);
       alert("Expense saved successfully");
     })
