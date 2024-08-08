@@ -52,6 +52,7 @@ input {
   border: 1px solid #ccc;
   height: 44px;
   border-radius: 6px;
+  padding: 2px 4px;
 }
 
 input[type="number"] {

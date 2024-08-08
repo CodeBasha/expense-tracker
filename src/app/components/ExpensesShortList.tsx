@@ -35,6 +35,7 @@ const ExpensesShortList: React.FC = () => {
         <table className="w-full">
           <thead>
             <tr>
+              <th className="text-left">ID</th>
               <th className="text-left">Title</th>
               <th className="text-left">Description</th>
               <th className="text-left">Date</th>
@@ -44,6 +45,7 @@ const ExpensesShortList: React.FC = () => {
           <tbody>
             {myExpenses.map((expense) => (
               <tr key={expense.id}>
+                <td>{expense.id}</td>
                 <td>{expense.title}</td>
                 <td>{expense.description}</td>
                 <td>{expense.date}</td>
