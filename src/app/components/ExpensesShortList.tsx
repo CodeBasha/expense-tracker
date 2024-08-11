@@ -31,7 +31,7 @@ const ExpensesShortList: React.FC = () => {
     <div className="w-[80%] mx-auto mt-12">
       <h2 className="mb-4">Here are your recent expenses.</h2>
 
-      {myExpenses.length > 0 ? (
+      {myExpenses.length > 0 && (
         <table className="w-full">
           <thead>
             <tr>
@@ -54,9 +54,9 @@ const ExpensesShortList: React.FC = () => {
             ))}
           </tbody>
         </table>
-      ) : (
-        <p>No expenses found.</p>
       )}
+
+      {myExpenses.length === 0 && <p>No expenses found.</p>}
     </div>
   );
 };
